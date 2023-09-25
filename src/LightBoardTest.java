@@ -49,49 +49,49 @@ class LightBoardTest {
         lightBoard.setLights(testBoard);
 
         // Row 0
-        assertTrue(lightBoard.evaluateLight(0,0));
-        assertTrue(lightBoard.evaluateLight(0,1));
+        assertFalse(lightBoard.evaluateLight(0,0));
+        assertFalse(lightBoard.evaluateLight(0,1));
         assertFalse(lightBoard.evaluateLight(0,2));
-        assertTrue(lightBoard.evaluateLight(0,3));
-        assertTrue(lightBoard.evaluateLight(0,4));
+        assertFalse(lightBoard.evaluateLight(0,3));
+        assertFalse(lightBoard.evaluateLight(0,4));
 
         // Row 1
-        assertTrue(lightBoard.evaluateLight(1,0));
+        assertFalse(lightBoard.evaluateLight(1,0));
         assertFalse(lightBoard.evaluateLight(1,1));
         assertFalse(lightBoard.evaluateLight(1,2));
-        assertTrue(lightBoard.evaluateLight(1,3));
+        assertFalse(lightBoard.evaluateLight(1,3));
         assertFalse(lightBoard.evaluateLight(1,4));
 
         // Row 2
-        assertTrue(lightBoard.evaluateLight(2,0));
+        assertFalse(lightBoard.evaluateLight(2,0));
         assertFalse(lightBoard.evaluateLight(2,1));
         assertFalse(lightBoard.evaluateLight(2,2));
-        assertTrue(lightBoard.evaluateLight(2,3));
+        assertFalse(lightBoard.evaluateLight(2,3));
         assertTrue(lightBoard.evaluateLight(2,4));
 
         // Row 3
-        assertTrue(lightBoard.evaluateLight(3,0));
+        assertFalse(lightBoard.evaluateLight(3,0));
         assertFalse(lightBoard.evaluateLight(3,1));
         assertFalse(lightBoard.evaluateLight(3,2));
         assertFalse(lightBoard.evaluateLight(3,3));
         assertTrue(lightBoard.evaluateLight(3,4));
 
         // Row 4
-        assertTrue(lightBoard.evaluateLight(4,0));
+        assertFalse(lightBoard.evaluateLight(4,0));
         assertFalse(lightBoard.evaluateLight(4,1));
         assertFalse(lightBoard.evaluateLight(4,2));
         assertFalse(lightBoard.evaluateLight(4,3));
         assertTrue(lightBoard.evaluateLight(4,4));
 
         // Row 5
-        assertTrue(lightBoard.evaluateLight(5,0));
-        assertTrue(lightBoard.evaluateLight(5,1));
+        assertFalse(lightBoard.evaluateLight(5,0));
+        assertFalse(lightBoard.evaluateLight(5,1));
         assertFalse(lightBoard.evaluateLight(5,2));
-        assertTrue(lightBoard.evaluateLight(5,3));
-        assertTrue(lightBoard.evaluateLight(5,4));
+        assertFalse(lightBoard.evaluateLight(5,3));
+        assertFalse(lightBoard.evaluateLight(5,4));
 
         // Row 6
-        assertFalse(lightBoard.evaluateLight(6,0));
+        assertTrue(lightBoard.evaluateLight(6,0));
         assertFalse(lightBoard.evaluateLight(6,1));
         assertFalse(lightBoard.evaluateLight(6,2));
         assertFalse(lightBoard.evaluateLight(6,3));
